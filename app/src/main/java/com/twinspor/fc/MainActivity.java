@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         s.setAllowContentAccess(false);
         s.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         s.setSupportMultipleWindows(false);
-        s.setUserAgentString(s.getUserAgentString() + " TwinsporApp/1.0");
+        s.setUserAgentString(s.getUserAgentString().replace("; wv", "") + " TwinsporApp/1.0");
 
         web.setWebViewClient(new WebViewClient() {
             @Override
